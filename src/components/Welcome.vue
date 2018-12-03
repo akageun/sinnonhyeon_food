@@ -1,12 +1,17 @@
 <template>
-  <div class="hello">
-    <h2>{{msg}}</h2>
+  <div>
+    <br>
+    <h2>신논현역 맛집</h2>
+    <br>
+    <Store_list/>
   </div>
 </template>
 
 <script>
+  import Store_list from "./Store_list";
   export default {
     name: 'Welcome',
+    components: {Store_list},
     data() {
       return {
         msg: '신논현 맛집 리스트'
