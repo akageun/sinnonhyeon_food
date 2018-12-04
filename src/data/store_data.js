@@ -185,5 +185,18 @@ exports.default = [
     label: [
       "고기집",
     ]
-  }
+  },
+  {
+    store_nm: "바르미 샤브샤브",
+    store_desc: "샤브샤브 집, 기름떡볶이가 맛있는 집",
+    rate: 4,
+    ref_link: [
+      "https://store.naver.com/restaurants/detail?id=32496975&query=%EB%B0%94%EB%A5%B4%EB%AF%B8%EC%83%A4%EB%B8%8C%EC%83%A4%EB%B8%8C%EC%95%A4%EC%B9%BC%EA%B5%AD%EC%88%98%20%EC%84%9C%EC%B4%88%EC%95%84%EC%9D%B4%ED%8C%8C%ED%81%AC%EC%A0%90"
+    ],
+    label: [
+      "소고기",
+      "샤브샤브",
+      "기름떡볶이"
+    ]
+  },
 ];
