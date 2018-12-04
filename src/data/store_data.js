@@ -1,5 +1,18 @@
 exports.default = [
   {
+    store_nm: "장작구이쌈밥",
+    store_desc: "장작구이쌈밥, 4인 정식이 맛있는 집.",
+    rate: 5,
+    thumbnail_img: "static/img1/thum_IMG_4980.JPG",
+    ref_link: [
+      "https://reegh.blog.me/220054695373",
+    ],
+    label: [
+      "4인파티",
+      "돌솥밥"
+    ]
+  },
+  {
     store_nm: "멘카오리",
     store_desc: "도톰한 차슈가 맛있다.유자 단무지가 나오고, 밥 공짜! 주문은 자판기로 하는 곳",
     rate: 3,
