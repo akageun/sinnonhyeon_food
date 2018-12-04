@@ -73,5 +73,32 @@ exports.default = [
       "한식",
       "시래기"
     ]
+  },
+  {
+    store_nm: "엔가와",
+    store_desc: "일본식 돈가스 맛집.",
+    rate: 4,
+    thumbnail_img: "static/img1/thumb_1.jpg",
+    ref_link: [
+      "https://blog.naver.com/redcherry88/221262293157"
+    ],
+    label: [
+      "일식",
+      "라멘",
+      "돈가스"
+    ]
+  },
+  {
+    store_nm: "브라운 돈가스",
+    store_desc: " 돈가스 맛집.",
+    rate: 4,
+    thumbnail_img: "static/img1/thumb_2.jpg",
+    ref_link: [
+      "https://store.naver.com/restaurants/detail?entry=plt&id=36410985&query=%EB%B8%8C%EB%9D%BC%EC%9A%B4%EB%8F%88%EA%B9%8C%EC%8A%A4%20%EB%B0%98%ED%8F%AC%EC%A0%90",
+      "https://blog.naver.com/ojum7897/220676390962"
+    ],
+    label: [
+      "돈가스"
+    ]
   }
 ]

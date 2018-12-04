@@ -12,4 +12,9 @@
 </script>
 
 <style>
+  @import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+  body {
+    font-family: 'Nanum Gothic', sans-serif;
+  }
 </style>

@@ -1,83 +1,26 @@
 <template>
-  <div class="container">
+  <div class="container mt-3 mb-5">
+    <h3>신논현 맛집</h3>
+
     <div class="row">
-      <div class="card col-xs-12 col-lg-6 p-3" v-for="store in storeList">
-        <div class="row ">
-          <div class="col">
-            <div class="card-block">
-              <h4 class="card-title">{{store.store_nm}}</h4>
-
-              <h6 class="card-subtitle mb-2 text-muted">
-                별점 : {{store.rate}}
-              </h6>
-
-              <p class="card-text text-justify">
-                {{store.store_desc}}
-              </p>
-
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 mt-2" v-for="store in storeList">
+        <div class="card text-dark bg-light">
+          <img class="card-img-top" v-if="store.thumbnail_img" :src="store.thumbnail_img" :alt="store.store_nm">
+          <div class="card-body bg-light">
+            <h5 class="card-title">{{store.store_nm}}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">별점 : {{store.rate}}</h6>
+            <p class="card-text text-left">{{store.store_desc}}</p>
+            <p class="card-text text-right">
               <span class="badge badge-success ml-1" v-for="(label, index) in store.label">
                 {{label}}
               </span>
-              <hr>
-              <a class="ml-1" v-for="(link, index) in store.ref_link" :href="link" target="_blank">link_{{index+1}}</a>
-            </div>
+            </p>
+          </div>
+          <div class="card-footer bg-white border-warning">
+            <a class="card-link" v-for="(link, index) in store.ref_link" :href="link" target="_blank">Blog</a>
           </div>
         </div>
       </div>
-
-
-      <!--<div class="card  col-sm-12 col-lg-6 p-3">-->
-      <!--<div class="row ">-->
-      <!--<div class="col-8">-->
-      <!--<div class="card-block">-->
-      <!--<h6 class="card-title text-right">Card Title</h6>-->
-      <!--<p class="card-text text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et-->
-      <!--dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis-->
-      <!--aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat-->
-      <!--non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>-->
-      <!--<a href="#" class="btn btn-primary">read more...</a>-->
-      <!--</div>-->
-      <!--</div>-->
-      <!--<div class="col-4">-->
-      <!--<img class="w-100" src="https://via.placeholder.com/150x150">-->
-      <!--</div>-->
-      <!--</div>-->
-      <!--</div>-->
-      <!--<div class="card  col-sm-12 col-lg-6 p-3">-->
-      <!--<div class="row ">-->
-      <!--<div class="col-md-4">-->
-      <!--<img class="w-100" src="https://via.placeholder.com/150x150">-->
-      <!--</div>-->
-      <!--<div class="col-md-8">-->
-      <!--<div class="card-block">-->
-      <!--<h6 class="card-title">Card Title</h6>-->
-      <!--<p class="card-text text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et-->
-      <!--dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis-->
-      <!--aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat-->
-      <!--non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>-->
-      <!--<a href="#" class="btn btn-primary">read more...</a>-->
-      <!--</div>-->
-      <!--</div>-->
-      <!--</div>-->
-      <!--</div>-->
-
-      <!--<div class="card  col-sm-12 col-lg-6 p-3">-->
-      <!--<div class="row ">-->
-      <!--<div class="col-md-4">-->
-      <!--<img class="w-100" src="https://via.placeholder.com/150x150">-->
-      <!--</div>-->
-      <!--<div class="col-md-8">-->
-      <!--<div class="card-block">-->
-      <!--<h6 class="card-title">Card Title</h6>-->
-      <!--<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna-->
-      <!--aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure-->
-      <!--dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,-->
-      <!--sunt in culpa qui officia deserunt mollit anim id est laborum.</p>-->
-      <!--<a href="#" class="btn btn-primary">read more...</a>-->
-      <!--</div>-->
-      <!--</div>-->
-      <!--</div>-->
-      <!--</div>-->
     </div>
   </div>
 </template>

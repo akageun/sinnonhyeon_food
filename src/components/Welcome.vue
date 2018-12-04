@@ -1,8 +1,5 @@
 <template>
   <div>
-    <br>
-    <h2>신논현역 맛집</h2>
-    <br>
     <Store_list/>
   </div>
 </template>
