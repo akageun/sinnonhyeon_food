@@ -103,7 +103,7 @@ exports.default = [
   },
   {
     store_nm: "브라운 돈가스",
-    store_desc: " 돈가스 맛집.",
+    store_desc: "돈가스 맛집.",
     rate: 4,
     thumbnail_img: "static/img1/thumb_2.jpg",
     ref_link: [
@@ -113,5 +113,77 @@ exports.default = [
     label: [
       "돈가스"
     ]
+  },
+  {
+    store_nm: "홍콩반점",
+    store_desc: "백종원 식당 중 하나, 평범함",
+    rate: 3,
+    ref_link: [
+      "https://blog.naver.com/thekal3979/221363961942"
+    ],
+    label: [
+      "중식",
+      "중국집",
+      "백종원"
+    ]
+  },
+  {
+    store_nm: "참좋은순대국",
+    store_desc: "순대국집",
+    rate: 3,
+    ref_link: [
+      "https://blog.naver.com/dnekal92/221381307220"
+    ],
+    label: [
+      "순대국",
+    ]
+  },
+  {
+    store_nm: "스파게티스토리",
+    store_desc: "저렴하게 스파게티를 먹을 수 있는 곳.",
+    rate: 4,
+    ref_link: [
+      "https://blog.naver.com/19dwd/221186529265"
+    ],
+    label: [
+      "스파게티",
+      "봉골레",
+    ]
+  },
+  {
+    store_nm: "사람 사는 고깃집 김일도",
+    store_desc: "고기가 맛있는 곳.",
+    rate: 5,
+    ref_link: [
+      "https://blog.naver.com/sofushgdma87/221306377165"
+    ],
+    label: [
+      "고기집",
+      "맛있는 밥상",
+      "제육김쌈정식",
+    ]
+  },
+  {
+    store_nm: "명동칼국수",
+    store_desc: "평범한 칼국수 집, 저렴해서 좋음.",
+    rate: 2,
+    ref_link: [
+      "https://fmsjjang.blog.me/221269697428",
+      "https://blog.naver.com/lllmissl/221303085754"
+    ],
+    label: [
+      "칼국수",
+    ]
+  },
+  {
+    store_nm: "삼육가",
+    store_desc: "묵은지 찌개는 먹을만함.",
+    rate: 2,
+    ref_link: [
+      "https://blog.naver.com/0602line/221325283531"
+    ],
+    label: [
+      "고기집",
+    ]
   }
-]
+];
