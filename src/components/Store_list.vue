@@ -1,7 +1,24 @@
 <template>
   <div class="container mt-3 mb-5">
     <h3>신논현 맛집</h3>
-    <h6 class="text-right">{{storeList.length}}개의 맛집이 있습니다.</h6>
+    <h6 class="text-right">{{storeAllList.length}}개의 맛집이 있습니다.</h6>
+    <div class="row">
+      <div class="col-12">
+        <div class="form-inline">
+          <div class="form-group">
+            <!--<select class="form-control tmpSelect2">-->
+            <!--<option :value="store.store_nm" v-for="store in storeList">{{store.store_nm}}</option>-->
+            <!--</select>-->
+          </div>
+          <div class="form-group ">
+            <!--<select class="form-control tmpSelect2" v-model="selectedStoreNm">-->
+              <!--<option :value="store.store_nm" v-for="store in storeAllList">{{store.store_nm}}</option>-->
+            <!--</select>-->
+          </div>
+
+        </div>
+      </div>
+    </div>
     <div class="row">
       <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 mt-2 " v-for="store in storeList">
         <div class="card text-dark bg-light  h-100">
@@ -30,9 +47,36 @@
 
   export default {
     name: "Store_list",
+
     data() {
       return {
-        storeList: storeData.default
+        selectedStoreNm: '',
+        storeAllList: storeData.default,
+      }
+    },
+    computed: {
+      storeList() {
+        console.log(this.selectedStoreNm);
+        const tmpSelectVal = this.selectedStoreNm;
+        return this.storeAllList.filter(function (store) {
+
+          if (tmpSelectVal === '') {
+            return store;
+          }
+
+          return store === tmpSelectVal;
+        })
+      }
+    },
+    mounted() {
+      this.initStoreListSelect2();
+    },
+    methods: {
+      initStoreListSelect2() {
+        $(' .tmpSelect2').select2({
+          placeholder: "가게명을 입력해주세요.",
+          theme: "bootstrap",
+        });
       }
     }
   }
