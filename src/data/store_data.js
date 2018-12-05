@@ -199,4 +199,30 @@ exports.default = [
       "기름떡볶이"
     ]
   },
+  {
+    store_nm: "돈두툼",
+    store_desc: "점심은 맛있음, 단, 저녁은 안가봄.",
+    rate: 4,
+    ref_link: [
+      "https://blog.naver.com/ebipwer3234/221081072400"
+    ],
+    label: [
+      "점심",
+      "김치찌개",
+      "4명"
+    ]
+  },
+  {
+    store_nm: "탐라는족발",
+    store_desc: "점심은 맛있음, 단, 저녁은 안가봄. 밥 무한!! 비빔밥 만들어먹기 좋음.",
+    rate: 4,
+    ref_link: [
+      "https://blog.naver.com/ilgrandemaga/221227876097",
+      "https://blog.naver.com/ewqipo7/221270880174"
+    ],
+    label: [
+      "제육",
+      "밥무한"
+    ]
+  },
 ];
