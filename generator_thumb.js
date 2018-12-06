@@ -1,5 +1,4 @@
 const im = require('imagemagick');
-const fs = require('fs');
 const p = require('path');
 
 const targetPath = "C:\\Users\\user\\Pictures\\food";
