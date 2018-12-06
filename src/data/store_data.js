@@ -1,5 +1,6 @@
 exports.default = [
   {
+    store_id: 1,
     store_nm: "장작구이쌈밥",
     store_desc: "장작구이쌈밥, 4인 정식이 맛있는 집.",
     rate: 5,
@@ -13,6 +14,7 @@ exports.default = [
     ]
   },
   {
+    store_id: 2,
     store_nm: "멘카오리",
     store_desc: "도톰한 차슈가 맛있다.유자 단무지가 나오고, 밥 공짜! 주문은 자판기로 하는 곳",
     rate: 3,
@@ -24,6 +26,7 @@ exports.default = [
     ]
   },
   {
+    store_id: 3,
     store_nm: "어랑",
     store_desc: "생선구이집",
     rate: 5,
@@ -37,6 +40,7 @@ exports.default = [
     ]
   },
   {
+    store_id: 4,
     store_nm: "새벽집",
     store_desc: "두부가 맛있는 집",
     rate: 3,
@@ -50,6 +54,7 @@ exports.default = [
     ]
   },
   {
+    store_id: 5,
     store_nm: "홍콩가",
     store_desc: "중국집, 메뉴가 다양함! 김치볶음밥 맛있음.",
     rate: 3,
@@ -62,6 +67,7 @@ exports.default = [
     ]
   },
   {
+    store_id: 6,
     store_nm: "전주 현대옥",
     store_desc: "콩나물 국밥 잘하는 곳, 남부시장식, 끓이는식 두 종류가 있음.",
     rate: 4,
@@ -76,6 +82,7 @@ exports.default = [
     ]
   },
   {
+    store_id: 7,
     store_nm: "신논현역 순남시래기",
     store_desc: "그냥 순남 시래기 집.",
     rate: 3,
@@ -88,6 +95,7 @@ exports.default = [
     ]
   },
   {
+    store_id: 8,
     store_nm: "엔가와",
     store_desc: "일본식 돈가스 맛집.",
     rate: 4,
@@ -102,6 +110,7 @@ exports.default = [
     ]
   },
   {
+    store_id: 9,
     store_nm: "브라운 돈가스",
     store_desc: "돈가스 맛집.",
     rate: 4,
@@ -115,6 +124,7 @@ exports.default = [
     ]
   },
   {
+    store_id: 10,
     store_nm: "홍콩반점",
     store_desc: "백종원 식당 중 하나, 평범함",
     rate: 3,
@@ -128,6 +138,7 @@ exports.default = [
     ]
   },
   {
+    store_id: 11,
     store_nm: "참좋은순대국",
     store_desc: "순대국집",
     rate: 3,
@@ -139,6 +150,7 @@ exports.default = [
     ]
   },
   {
+    store_id: 12,
     store_nm: "스파게티스토리",
     store_desc: "저렴하게 스파게티를 먹을 수 있는 곳.",
     rate: 4,
@@ -151,6 +163,7 @@ exports.default = [
     ]
   },
   {
+    store_id: 13,
     store_nm: "사람 사는 고깃집 김일도",
     store_desc: "고기가 맛있는 곳.",
     rate: 5,
@@ -164,6 +177,7 @@ exports.default = [
     ]
   },
   {
+    store_id: 14,
     store_nm: "명동칼국수",
     store_desc: "평범한 칼국수 집, 저렴해서 좋음.",
     rate: 2,
@@ -176,6 +190,7 @@ exports.default = [
     ]
   },
   {
+    store_id: 15,
     store_nm: "삼육가",
     store_desc: "묵은지 찌개는 먹을만함.",
     rate: 2,
@@ -187,6 +202,7 @@ exports.default = [
     ]
   },
   {
+    store_id: 16,
     store_nm: "바르미 샤브샤브",
     store_desc: "샤브샤브 집, 기름떡볶이가 맛있는 집",
     rate: 4,
@@ -200,6 +216,7 @@ exports.default = [
     ]
   },
   {
+    store_id: 17,
     store_nm: "돈두툼",
     store_desc: "점심은 맛있음, 단, 저녁은 안가봄.",
     rate: 4,
@@ -213,6 +230,7 @@ exports.default = [
     ]
   },
   {
+    store_id: 18,
     store_nm: "탐라는족발",
     store_desc: "점심은 맛있음, 단, 저녁은 안가봄. 밥 무한!! 비빔밥 만들어먹기 좋음.",
     rate: 4,

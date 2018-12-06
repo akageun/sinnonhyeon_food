@@ -12,7 +12,7 @@
           </div>
           <div class="form-group ">
             <!--<select class="form-control tmpSelect2" v-model="selectedStoreNm">-->
-              <!--<option :value="store.store_nm" v-for="store in storeAllList">{{store.store_nm}}</option>-->
+            <!--<option :value="store.store_nm" v-for="store in storeAllList">{{store.store_nm}}</option>-->
             <!--</select>-->
           </div>
 
@@ -24,7 +24,10 @@
         <div class="card text-dark bg-light  h-100">
           <img class="card-img-top" v-if="store.thumbnail_img" :src="store.thumbnail_img" :alt="store.store_nm">
           <div class="card-body bg-light">
-            <h5 class="card-title">{{store.store_nm}}</h5>
+            <h5 class="card-title">
+              <router-link :to="{path: '/'+ store.store_id}">{{store.store_nm}}</router-link>
+
+            </h5>
             <h6 class="card-subtitle mb-2 text-muted">별점 : {{store.rate}}</h6>
             <p class="card-text text-left">{{store.store_desc}}</p>
             <p class="card-text text-right">
@@ -56,7 +59,6 @@
     },
     computed: {
       storeList() {
-        console.log(this.selectedStoreNm);
         const tmpSelectVal = this.selectedStoreNm;
         return this.storeAllList.filter(function (store) {
 
