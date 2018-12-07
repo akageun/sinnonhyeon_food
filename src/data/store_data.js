@@ -243,4 +243,16 @@ exports.default = [
       "밥무한"
     ]
   },
+  {
+    store_id: 19,
+    store_nm: "이화수 전통육개장",
+    store_desc: "육개장 맛있음. 맑은 육개장도!! 간이 이상하면 국물 더 달라고 하면 더 줌!!",
+    rate: 4,
+    ref_link: [
+      "https://blog.naver.com/dlsk_93/221398326409"
+    ],
+    label: [
+      "육개장"
+    ]
+  },
 ];
