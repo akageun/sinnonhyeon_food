@@ -1,4 +1,5 @@
 const readline = require('readline');
+const crypto = require('crypto');
 
 const qTypeCd = {
   STR: "STRING",
@@ -154,12 +155,15 @@ let resultConfirm = (answers) => {
   });
 };
 
-const Datastore = require('nedb');
-const storeDb = new Datastore({
-  filename: './temp_store_db.json',
-  autoload: true,
-  timestampData: true
-});
+function getRandomId() {
+  const len = 16;
+  return crypto.randomBytes(Math.ceil(Math.max(8, len * 2)))
+    .toString('base64')
+    .replace(/[+\/]/g, '')
+    .slice(0, len);
+}
+
+var fs = require('fs')
 
 
 let generatorResultJson = (answers) => {
@@ -170,21 +174,30 @@ let generatorResultJson = (answers) => {
       resultJson[qInfo.fieldName] = answers[index];
     });
 
+    resultJson['_id'] = getRandomId();
+
     console.log("");
     console.log("resultJson : ", resultJson);
-    storeDb.insert(resultJson, function (err, doc) {
-      console.log('Inserted', doc.store_nm, 'with ID', doc._id);
 
+    let contents = fs.readFileSync("./src/data/temp.json");
+    console.log("TEST -1");
+    let json = JSON.parse(contents);
+    json.push(resultJson);
+    console.log("TEST 0");
+    const resultJ = JSON.stringify(json);
+    fs.writeFile("./src/data/temp.json", resultJ, 'utf8', function () {
+      console.log("TEST 1");
       res(resultJson);
     });
+
   });
 };
-
 
 let genratorComplete = () => {
   console.log("성공")
   process.exit(0);
 }
+
 
 askQuestions()
   .then(resultConfirm)
