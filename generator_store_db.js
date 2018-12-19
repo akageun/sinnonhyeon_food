@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const im = require('imagemagick');
 
-const targetJsonFullPath = "./src/data/temp.json";
+const targetJsonFullPath = "./src/data/store_data_v2.json";
 const saveImgPath = "./static/img2";
 
 const qTypeCd = {
@@ -145,6 +145,7 @@ let askQuestions = () => {
 
 let handleError = (err) => {
   console.log(`ERROR: ${err}`);
+  process.exit(0);
 };
 
 let resultConfirm = (answers) => {
@@ -208,7 +209,7 @@ let generatorResultJson = (answers) => {
       resultJson[qInfo.fieldName] = answers[index];
     });
 
-    resultJson['_id'] = getRandomId();
+    resultJson['store_id'] = getRandomId();
 
     res(resultJson);
   });
@@ -251,11 +252,18 @@ let imageConverting = (answers) => {
 let moveImage = (answers) => {
   return new Promise((res, rej) => {
     let detailImgs = answers.detail_img;
-    for (let img of detailImgs) {
+    if (detailImgs === undefined || detailImgs === '') {
+      res(answers);
+    }
+
+    for (let imgIndex in detailImgs) {
+      const img = detailImgs[imgIndex];
       const filename = img.replace(/^.*[\\\/]/, '');
       const savePath = path.join(saveImgPath, filename);
 
       fs.copyFileSync(img, savePath);
+
+      detailImgs[imgIndex] = savePath;
     }
 
     res(answers);
