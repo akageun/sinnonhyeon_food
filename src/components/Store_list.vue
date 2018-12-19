@@ -22,7 +22,7 @@
     <div class="row">
       <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 mt-2 " v-for="store in storeList">
         <div class="card text-dark bg-light  h-100">
-          <img class="card-img-top" v-if="store.thumbnail_img" :src="store.thumbnail_img" :alt="store.store_nm">
+          <img class="card-img-top" v-if="store.thum_img" :src="store.thum_img" :alt="store.store_nm">
           <div class="card-body bg-light">
             <h5 class="card-title">
               <router-link :to="{path: '/'+ store.store_id}">{{store.store_nm}}</router-link>
@@ -46,7 +46,7 @@
 </template>
 
 <script>
-  import storeData from "../data/store_data";
+  import storeData from "../data/store_data_v2.json";
 
   export default {
     name: "Store_list",
@@ -54,7 +54,7 @@
     data() {
       return {
         selectedStoreNm: '',
-        storeAllList: storeData.default,
+        storeAllList: storeData,
       }
     },
     computed: {

@@ -8,7 +8,7 @@
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "build": "node build/build.js",
-    "gen_img": "node generator_thumb.js"
+    "gen": "node generator_store_db.js"
   },
   "dependencies": {
     "bootstrap": "^4.1.3",

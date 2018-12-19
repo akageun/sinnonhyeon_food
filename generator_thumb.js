@@ -9,7 +9,7 @@ const saveImg = p.join(targetPath, "thum_" + targetFileNm);
 
 function imageResize(item, item2) {
   return new Promise(function (resolve, reject) {
-    im.convert([item, "-thumbnail", "150x150", item2],
+    im.convert([item, "-thumbnail", "550x550", item2],
       function (err, stdout) {
         if (err) {
           reject(err);

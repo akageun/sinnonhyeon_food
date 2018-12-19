@@ -236,6 +236,10 @@ let generatorComplete = () => {
 let imageConverting = (answers) => {
   return new Promise((res, rej) => {
     let thumImg = answers.thum_img;
+    if (thumImg === undefined || thumImg === '') {
+      res(answers);
+    }
+
     const filename = thumImg.replace(/^.*[\\\/]/, '');
     const savePath = path.join(saveImgPath, "thum_" + filename);
 
@@ -244,7 +248,7 @@ let imageConverting = (answers) => {
         if (err) {
           rej(err);
         }
-        answers.thum_img = savePath;
+        answers.thum_img = savePath.replace("\\", "/");
         res(answers);
       });
   });
@@ -263,7 +267,7 @@ let moveImage = (answers) => {
 
       fs.copyFileSync(img, savePath);
 
-      detailImgs[imgIndex] = savePath;
+      detailImgs[imgIndex] = savePath.replace("\\", "/");
     }
 
     res(answers);

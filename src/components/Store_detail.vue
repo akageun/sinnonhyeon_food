@@ -8,7 +8,7 @@
           <div class="card-body bg-light">
             <h5 class="card-title">{{storeInfo.store_nm}}</h5>
             <h6 class="card-subtitle mb-2 text-muted">별점 : {{storeInfo.rate}}</h6>
-            <img class="" v-if="storeInfo.thumbnail_img" :src="storeInfo.thumbnail_img" :alt="storeInfo.store_nm">
+            <img class="" v-if="storeInfo.thum_img" :src="storeInfo.thum_img" :alt="storeInfo.store_nm">
             <p class="card-text text-left">{{storeInfo.store_desc}}</p>
             <p class="card-text text-right">
               <span class="badge badge-success ml-1" v-for="(label, index) in storeInfo.label">
@@ -33,7 +33,7 @@
 </template>
 
 <script>
-  import storeData from "../data/store_data";
+  import storeData from "../data/store_data_v2.json";
 
   export default {
     name: "Store_detail",
@@ -44,7 +44,7 @@
     },
     created() {
       const tmpStoreId = this.$route.params.storeId;
-      const storeFilterdList = storeData.default.filter(function (store) {
+      const storeFilterdList = storeData.filter(function (store) {
         return store.store_id == tmpStoreId;
       })
 
