@@ -170,7 +170,7 @@ let resultConfirm = (answers) => {
       output: process.stdout
     });
 
-    rl.question('해당 데이터가 맞습니까? (Y/n)', answer => {
+    rl.question('해당 데이터가 맞습니까? (Y/n)  ', answer => {
       if (answer === 'Y') {
         res(answers);
       } else {
