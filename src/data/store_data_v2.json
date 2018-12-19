@@ -2,7 +2,7 @@
   {
     "store_nm": "현지네",
     "store_desc": "가정식 백반이 맛있는집, 4명이가면 백반2개에 제육, 오징어 이렇게 주문하면 좋음.",
-    "thum_img": "static\\img2\\thum_IMG_4520.JPG",
+    "thum_img": "static/img2/thum_IMG_4520.JPG",
     "rate": "4",
     "detail_img": [],
     "ref_link": [
@@ -15,5 +15,56 @@
       "오징어"
     ],
     "store_id": "sHIGKdfx61ua6xbV"
+  },
+  {
+    "store_nm": "전주 현대옥",
+    "store_desc": "콩나물 국밥 잘하는 곳, 남부시장식, 끓이는식 두 종류가 있음.",
+    "thum_img": "static/img2/thum_2190.jpg",
+    "rate": "4",
+    "detail_img": [
+      "static/img2/S__27738157.jpg"
+    ],
+    "ref_link": [
+      "https://blog.naver.com/lyb823/221051369841",
+      "https://blog.naver.com/kil_bong/221084635095"
+    ],
+    "label": [
+      "한식",
+      "콩나물국밥",
+      "해장"
+    ],
+    "store_id": "z1DXOsLh6eznyRic"
+  },
+  {
+    "store_nm": "엔가와",
+    "store_desc": "일본식 돈가스 맛집. 단, 가격은 조금 비싼편이다.",
+    "thum_img": "static/img2/thum_IMG_4655.JPG",
+    "rate": "4",
+    "detail_img": [],
+    "ref_link": [
+      "https://blog.naver.com/redcherry88/221262293157"
+    ],
+    "label": [
+      "일식",
+      "라멘",
+      "돈가스"
+    ],
+    "store_id": "uzk9WUlvnWTC7I73"
+  },
+  {
+    "store_nm": "장작구이쌈밥",
+    "store_desc": "장작구이쌈밥, 4인 정식이 맛있는 집(4명이가야 세트 4개를 다 먹을 수 있음)",
+    "thum_img": "static/img2/thum_IMG_4980.JPG",
+    "rate": "5",
+    "detail_img": [],
+    "ref_link": [
+      "https://reegh.blog.me/220054695373"
+    ],
+    "label": [
+      "한식",
+      "4인파티",
+      "돌솥밥"
+    ],
+    "store_id": "7YptQAo9AQCI45C7"
   }
 ]
