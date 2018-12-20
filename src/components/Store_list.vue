@@ -6,18 +6,18 @@
     <div class="row">
       <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 mb-4 " v-for="store in storeList">
         <div class="card text-dark h-100">
-          <router-link :to="{path: '/'+ store.store_id}">
+          <router-link class="black-color" :to="{path: '/'+ store.store_id}">
             <img class="card-img-top" v-if="store.thum_img" :src="store.thum_img" :alt="store.store_nm">
           </router-link>
           <div class="card-body">
             <h5 class="card-title">
-              <router-link :to="{path: '/'+ store.store_id}"><b>{{store.store_nm}}</b></router-link>
+              <router-link class="black-color" :to="{path: '/'+ store.store_id}"><b>{{store.store_nm}}</b></router-link>
             </h5>
             <h6 class="card-subtitle mb-2 text-muted">
               별점 : {{store.rate}}
             </h6>
             <p class="card-text text-left">
-              <router-link :to="{path: '/'+ store.store_id}">
+              <router-link class="black-color" :to="{path: '/'+ store.store_id}">
                 {{store.store_desc}}
               </router-link>
             </p>

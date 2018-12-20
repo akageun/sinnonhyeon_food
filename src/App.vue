@@ -19,8 +19,8 @@
     background-color: #f7f8f9;
   }
 
-  a {
-    color: black;
+  a.black-color {
+    color: black !important;
   }
 
   a:hover {
