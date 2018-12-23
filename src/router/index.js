@@ -7,8 +7,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Welcome',
-      component: require('@/components/Welcome').default
+      name: 'Store_list',
+      component: require('@/components/Store_list').default
     },
     {
       path: '/:storeId',
