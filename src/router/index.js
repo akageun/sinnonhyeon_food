@@ -12,7 +12,7 @@ export default new Router({
     },
     {
       path: '/:storeId',
-      name: 'StoreDetail',
+      name: 'Store_detail',
       component: require('@/components/Store_detail').default
     }
   ]
